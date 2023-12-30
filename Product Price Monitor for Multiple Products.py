@@ -1,7 +1,7 @@
 from bs4 import BeautifulSoup
 import requests
 import smtplib
-# import time
+import time
 import csv
 import pymysql
 # data urls
@@ -90,5 +90,5 @@ if __name__ == '__main__':
                     storing_data_into_csv(product_title, current_price, availability, url)
                     storing_data_into_database(product_title, current_price, availability, url)
                     break
-            # Pause for 60 seconds
-            # time.sleep(3)
+            # Pause for 10 minutes
+            time.sleep(600)
