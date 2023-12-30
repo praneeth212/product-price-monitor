@@ -12,8 +12,8 @@ urls = ['https://www.amazon.in/Sony-Headphones-Customizable-Equalizer-DSEE-Upsca
 headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36'}
 desired_price = 3000.0
 # Email credentials
-sender = 'praneethmarem@gmail.com'
-receiver = 'praneethmarem@gmail.com'
+sender = 'markanthony@gmail.com'
+receiver = 'markanthony@gmail.com'
 password = 'jshqvhinlwhiwpmh'
 
 
@@ -60,7 +60,7 @@ def storing_data_into_csv(product_title, current_price, availability, url):
 
 
 def storing_data_into_database(product_title, current_price, availability, url):
-    conn = pymysql.connect(host='localhost', user='root', password='Sujatha@2002', database='pricemonitor', port=3306)
+    conn = pymysql.connect(host='localhost', user='root', password='root', database='pricemonitor', port=3306)
     cursor = conn.cursor()
     product_title = product_title[:100]
     url = url[:100]
